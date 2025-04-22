@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Color Generator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background 0.5s, color 0.5s;
+    }
+    #colorBox {
+      margin: 30px auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 15px;
+      border: 2px solid #000;
+      transition: background-color 0.5s;
+      line-height: 200px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Color Generator</h1>
+  <div id="colorBox">Loading...</div>
+  <p id="hexCode">Fetching color...</p>
+  <button onclick="getColor()">New Color</button>
+
+  <script src="color.js"></script>
+</body>
+</html>
